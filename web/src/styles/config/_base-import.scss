@@ -1,0 +1,14 @@
+
+@import "mixins";
+
+
+// Colors
+
+$color-brand: #960048;
+$color-secondary:#FAEDDE;
+$color-tertiary: #F5A800;
+
+$color-blue: #0033A1;
+
+// Layout
+$constraint-width: #{1170px + 120px}; // 1170 page width + desktop horizontal padding

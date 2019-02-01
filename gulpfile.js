@@ -20,7 +20,7 @@ gulp.task('sass', () => {
     )
     .pipe(minifyCSS())
     .pipe(concat('styles.css'))
-    .pipe(gulp.dest('./web/build/styles'));
+    .pipe(gulp.dest('./styles'));
 });
 
 gulp.task('js', () => {
@@ -33,14 +33,14 @@ gulp.task('js', () => {
     )
     .pipe(concat('app.js'))
     .pipe(minifyJS())
-    .pipe(gulp.dest('./web/build/js'));
+    .pipe(gulp.dest('./js'));
 });
 
 gulp.task('html', () => {
   return gulp
-    .src('./web/src/**/*.html')
+    .src('./web/src/html/*.html')
     .pipe(minifyHTML())
-    .pipe(gulp.dest('./web/build'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', gulp.series('sass', 'js', 'html'));
