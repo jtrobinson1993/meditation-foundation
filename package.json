@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel": "^6.23.0",
+    "@babel/preset-env": "^7.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-cleanhtml": "^1.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
