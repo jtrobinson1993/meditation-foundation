@@ -1,0 +1,17 @@
+
+.skip-to-content {
+  position: absolute;
+  left:-99999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+  }
+}

@@ -1,1 +1,14 @@
+@import "base-vars";
+@import "functions";
 
+@mixin bp-tablet() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin bp-desktop() {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}

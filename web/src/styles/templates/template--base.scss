@@ -1,0 +1,51 @@
+@import "../config/_base-import.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 100%;
+}
+
+
+h1, h2, h3 {
+  font-family: "Shrikhand", cursive, sans-serif;
+}
+
+.page-wrapper {
+  background: $color-secondary;
+}
+
+// Colors
+
+.is- {
+  &black {
+    background-color: $color-black;
+  }
+  &brand {
+    background-color: $color-brand;
+  }
+  &tertiary {
+    background-color: $color-tertiary;
+  }
+}
+
+.screen-reader-only {
+  position: absolute;
+  left: -99999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+@import "../partials/skip-to-content";
+@import "../partials/buttons";
+@import "../partials/page-header";

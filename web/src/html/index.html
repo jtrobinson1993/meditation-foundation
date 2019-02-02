@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Meditation Foundation | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="./styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Shrikhand" rel="stylesheet">
+  
 </head>
 
 <body>
-  <a class="skip-to-content" href="#page-content">Skip to Content</a>
+  <a class="skip-to-content branded-button is-black" href="#page-content">
+    <span class="branded-button__inner is-tertiary">Skip to Content</span>
+  </a>
   <div class="page-wrapper">
     <header class="page-header">
       <div class="width-constrained page-header__constraint">
@@ -16,7 +23,15 @@
           <h1 class="page-header__logo-text">Meditation Foundation</h1>
         </div>
 
-        <nav class="page-header__nav">
+        <button id="main-menu-toggle" aria-controls="main-menu" class="page-header__nav-toggle">
+          <small class="screen-reader-only">Open Menu</small>
+          <span class="page-header__toggle-bar"></span>
+          <span class="page-header__toggle-bar"></span>
+          <span class="page-header__toggle-bar"></span>
+          <span class="page-header__toggle-bar"></span>
+        </button>
+
+        <nav id="main-menu" class="page-header__nav">
           <ul class="page-header__menu">
             <li class="page-header__menu-item">
               <a class="page-header__menu-link" href="./who-we-are.html">Who We Are</a>
@@ -43,8 +58,8 @@
           <h1 class="hero-banner__heading">We're here to ohmm.</h1>
           <p class="hero-banner__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="./meditate-now.html" class="hero-banner__button branded-button branded-button--tertiary branded-button--icon">
-            Meditate Now
+          <a href="./meditate-now.html" class="hero-banner__button branded-button is-black">
+            <span class="branded-button__inner branded-button__inner--icon is-tertiary">Meditate Now</span>
           </a>
 
         </div>
@@ -135,7 +150,9 @@
 
           </div>
 
-          <a href="./news.html" class="latest-news__button branded-button branded-button--black">More News</a>
+          <a href="./news.html" class="latest-news__button branded-button is-tertiary">
+            <span class="branded-button__inner is-black">More News</span>
+          </a>
 
         </div>
       </section>
@@ -148,7 +165,9 @@
           </header>
           <form class="email-signup__form">
             <input type="text" class="email-signup__form-email" />
-            <button class="email-signup__form-submit branded-button branded-button--tertiary branded-button--icon">Submit</button>
+            <button class="email-signup__form-submit branded-button is-black">
+              <span class="branded-button__inner is-tertiary branded-button__inner--icon">Submit</span>
+            </button>
           </form>
           <small class="email-signup__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</small>
           <div class="social-media">
@@ -220,7 +239,7 @@
             <li class="page-footer__menu-item">
               <a class="page-footer__menu-link" href="./what-we-do.html">What We Do</a>
             </li>
-            
+
             <li class="page-footer__menu-item">
               <a class="page-footer__menu-link" href="./how-to-help.html">How to Help</a>
             </li>
@@ -233,23 +252,23 @@
 
           <ul class="page-footer__menu page-footer__menu-second">
 
-              <li class="page-footer__menu-item page-footer__menu-item--first">
-                <a class="page-footer__menu-link" href="./donate.html">Donate</a>
-              </li>
-  
-              <li class="page-footer__menu-item">
-                <a class="page-footer__menu-link" href="./contact.html">Contact Us</a>
-              </li>
-              
-              <li class="page-footer__menu-item">
-                <a class="page-footer__menu-link" href="./privacy.html">Privacy Policy</a>
-              </li>
-  
-              <li class="page-footer__menu-item page-footer__menu-item--last">
-                <a class="page-footer__menu-link" href="./terms.html">Terms of Use</a>
-              </li>
-  
-            </ul>
+            <li class="page-footer__menu-item page-footer__menu-item--first">
+              <a class="page-footer__menu-link" href="./donate.html">Donate</a>
+            </li>
+
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="./contact.html">Contact Us</a>
+            </li>
+
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="./privacy.html">Privacy Policy</a>
+            </li>
+
+            <li class="page-footer__menu-item page-footer__menu-item--last">
+              <a class="page-footer__menu-link" href="./terms.html">Terms of Use</a>
+            </li>
+
+          </ul>
 
         </div>
 
@@ -261,6 +280,7 @@
     </footer>
 
   </div>
-  <script src="./js/templates/home.js"></script>
+  <script src="./js/app.js"></script>
 </body>
+
 </html>
