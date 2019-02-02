@@ -18,8 +18,8 @@ gulp.task('sass', () => {
         browsers: ['last 2 versions']
       })
     )
-    .pipe(minifyCSS())
     .pipe(concat('styles.css'))
+    .pipe(minifyCSS())
     .pipe(gulp.dest('./styles'));
 });
 
