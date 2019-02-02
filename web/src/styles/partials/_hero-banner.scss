@@ -1,9 +1,18 @@
 
 .hero-banner {
+  display: flex;
   background: url('../assets/mountains-1.png') no-repeat center;
   background-size: cover;
-  min-height: 260px;
+  min-height: 320px;
   padding: 30px 0;
+
+  @include bp-tablet() {
+    min-height: 540px;
+  }
+
+  @include bp-desktop() {
+    min-height: 820px;
+  }
 
   &__constraint {
     display: flex;
@@ -11,24 +20,43 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
   }
 
   &__heading {
-    margin: 0 0 .5em;
+    margin: 0 0 30px;
     color: #fff;
-    font-size: ptToRem(24);
+    font-size: pxToRem(36);
     line-height: 1;
+    @include bp-tablet() {
+      font-size: pxToRem(52);
+    }
+    @include bp-desktop() {
+      font-size: pxToRem(81);
+    }
   }
 
   &__content {
     text-align: center;
     color: #fff;
-    font-size: ptToRem(14);
+    font-size: pxToRem(16);
     line-height: 1.4;
     margin: 0;
+    @include bp-tablet() {
+      font-size: pxToRem(24);
+    }
+    @include bp-desktop() {
+      font-size: pxToRem(30);
+    }
   }
 
   &__button {
     margin: 1em 0 0;
+    @include bp-tablet() {
+      margin: 1.5em 0 0;
+    }
+    @include bp-desktop() {
+      margin: 2em 0 0;
+    }
   }
 }

@@ -167,9 +167,9 @@
             <h1 class="email-signup__heading">Sign up for our emails</h1>
           </header>
           <form class="email-signup__form">
-            <input type="text" class="email-signup__form-email" />
+            <input placeholder="Email Address" type="text" class="email-signup__form-email" />
             <button class="email-signup__form-submit branded-button is-black">
-              <span class="branded-button__inner is-tertiary branded-button__inner--icon">Submit</span>
+              <span class="email-signup__form-submit-inner branded-button__inner is-tertiary branded-button__inner--icon">Submit</span>
             </button>
           </form>
           <small class="email-signup__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</small>
@@ -218,22 +218,24 @@
       <div class="width-constrained page-footer_constraint">
 
         <div class="page-footer__logo-con">
-          <img class="page-footer_logo" src="./assets/logo.jpg" alt="Meditation Foundation logo, an illustration of a flower" />
-          <span class="page-footer__logo-text">Meditation Foundation</span>
+          <a href="./index.html" class="page-footer__logo-link">
+            <img class="page-footer__logo" src="./assets/meditation-foundation-black.png" alt="Meditation Foundation logo, an illustration of a flower" />
+            <span class="page-footer__logo-text">Meditation Foundation</span>
+          </a>
         </div>
 
         <div class="page-footer__info">
 
-          <address class="page-footer__address">
-            <ul>
-              <li>1201 Infinity Ct.</li>
-              <li>Lincoln, NE 68512</li>
-              <li>ph: 402-555-1234</li>
-              <li><a href="mailto:info@abc123.org">info@abc123.org</a></li>
+          <address class="page-footer__address page-footer__info-item">
+            <ul class="page-footer__menu">
+              <li class="page-footer__menu-item">1201 Infinity Ct.</li>
+              <li class="page-footer__menu-item">Lincoln, NE 68512</li>
+              <li class="page-footer__menu-item">ph: 402-555-1234</li>
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="mailto:info@abc123.org">info@abc123.org</a></li>
             </ul>
           </address>
 
-          <ul class="page-footer__menu page-footer__menu-first">
+          <ul class="page-footer__menu page-footer__menu-first page-footer__info-item">
 
             <li class="page-footer__menu-item page-footer__menu-item--first">
               <a class="page-footer__menu-link" href="./who-we-are.html">Who We Are</a>
@@ -253,7 +255,7 @@
 
           </ul>
 
-          <ul class="page-footer__menu page-footer__menu-second">
+          <ul class="page-footer__menu page-footer__menu-second page-footer__info-item">
 
             <li class="page-footer__menu-item page-footer__menu-item--first">
               <a class="page-footer__menu-link" href="./donate.html">Donate</a>
