@@ -5,6 +5,8 @@
 $color-black: #000;
 $color-white: #fff;
 
+$color-grey: #AFAFAF;
+
 $color-brand: #960048;
 $color-secondary:#FAEDDE;
 $color-tertiary: #F5A800;
@@ -13,3 +15,11 @@ $color-blue: #0033A1;
 
 // Layout
 $constraint-width: #{1170px + 120px}; // 1170 page width + desktop horizontal padding
+
+// Icons
+
+$font-family-icons: 'Font Awesome\ 5 Free';
+$font-family-icons-brands: 'Font Awesome\ 5 Brands';
+
+$share-icon: '\f064';
+$comment-icon: '\f075';

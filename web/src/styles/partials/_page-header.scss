@@ -2,6 +2,38 @@
 
 .page-header {
 
+  &__constraint {
+    padding: 15px;
+  }
+
+  &__logo-con {
+    text-align: center;
+    margin: 0;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 0;
+  }
+
+  &__logo {
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__logo-text {
+    display: inline-block;
+    font-size: 1.675rem;
+    vertical-align: middle;
+    width: 175px;
+    line-height: .875;
+    margin: .1em 0 0 5px;
+    font-weight: 400;
+  }
+
   &__nav-toggle {
     position: fixed;
     bottom: 10px;

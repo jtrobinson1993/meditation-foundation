@@ -15,12 +15,39 @@ body {
 }
 
 
+// Base Styles
+
 h1, h2, h3 {
   font-family: "Shrikhand", cursive, sans-serif;
+  line-height: 1;
 }
 
 .page-wrapper {
   background: $color-secondary;
+}
+
+section {
+  h1 {
+    font-size: pxToRem(28);
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 .67em;
+    @include bp-tablet() {
+      font-size: pxToRem(42);
+    }
+  }
+}
+
+.width-constrained {
+  max-width: $constraint-width;
+  margin: 0 auto;
+  padding: 30px;
+  @include bp-tablet() {
+    padding: 45px;
+  }
+  @include bp-desktop() {
+    padding: 60px;
+  }
 }
 
 // Colors
@@ -37,6 +64,7 @@ h1, h2, h3 {
   }
 }
 
+
 .screen-reader-only {
   position: absolute;
   left: -99999px;
@@ -49,3 +77,5 @@ h1, h2, h3 {
 @import "../partials/skip-to-content";
 @import "../partials/buttons";
 @import "../partials/page-header";
+@import "../partials/hero-banner";
+@import "../partials/news";
