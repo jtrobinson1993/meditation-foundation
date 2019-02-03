@@ -6,8 +6,36 @@
   border-radius: 30px;
   text-decoration: none;
   border-radius: 30px;
+  border: none;
   font-size: pxToRem(20);
   color: #fff;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    .branded-button__inner {
+      transform: translate(11px, -11px);
+    }
+  }
+
+  &.is- {
+    &black {
+      background-color: transparent;
+      transition: background-color 0s linear .25s;
+      &:hover {
+        background-color: $color-black;
+        transition: none;
+      }
+      
+    }
+    &brand {
+      background-color: $color-brand;
+    }
+    &tertiary {
+      background-color: $color-tertiary;
+    }
+  }
+
 
   &__inner {
     display: inline-block;
@@ -15,9 +43,22 @@
     padding: 15px 30px;
     line-height: pxToRem(30);
     transition: transform .25s ease;
+    min-width: 150px;
 
     &:hover {
-      transform: translate(11px, -11px);
+      
+    }
+
+    &--icon {
+      position: relative;
+      padding: 15px 30px 15px 65px;
+  
+      &:before {
+        font-family: $font-family-icons;
+        font-size: pxToRem(26);
+        position: absolute;
+        left: 25px;
+      }
     }
   }
 

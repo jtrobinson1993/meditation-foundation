@@ -1,0 +1,36 @@
+@import "../config/_base-import.scss";
+
+.page-content {
+  &__constraint {
+    @include bp-desktop() {
+      display: flex;
+    }
+  }
+}
+
+.standard-content {
+  @include bp-desktop() {
+    flex: 1 1 auto;
+  }
+
+  &__content {
+
+  }
+
+  &__header {
+
+  }
+
+  &__heading {
+    text-align: left;
+  }
+
+  &__teaser {
+    font-size: pxToRem(19);
+
+    @include bp-tablet() {
+      font-size: pxToRem(23);
+    }
+  }
+
+}

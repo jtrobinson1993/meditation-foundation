@@ -10,6 +10,10 @@
   &__logo-con {
     text-align: center;
     margin: 0;
+
+    @include bp-desktop() {
+      margin: 15px 0 30px;
+    }
   }
 
   &__logo-link {
@@ -60,7 +64,7 @@
     margin: 30px 0;
     text-align: left;
     @include bp-tablet() {
-      margin: 30px 45px;
+      margin: 30px 60px;
       text-align: center;
     }
   }

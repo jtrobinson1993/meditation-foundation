@@ -1,0 +1,10 @@
+@import "../config/_base-import.scss";
+
+.interior-banner {
+  background: url('../assets/mountains-3.jpg') no-repeat center;
+  background-size: cover;
+  height: 340px;
+  @include bp-desktop() {
+    height: 460px;
+  }
+}

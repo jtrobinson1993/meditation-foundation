@@ -23,7 +23,7 @@
     flex: 1 1 auto;
     font-size: pxToRem(16);
     line-height: 1;
-    color: #000;
+    color: $color-grey-dark;
     padding: 15px 30px;
 
     @include bp-tablet() {
@@ -42,6 +42,9 @@
   &__form-submit-inner {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    &:before {
+      content: '\f0e0';
+    }
   }
 
   &__disclaimer {
