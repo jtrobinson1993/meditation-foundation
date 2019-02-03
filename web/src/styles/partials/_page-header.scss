@@ -4,11 +4,33 @@
 
   &__constraint {
     padding: 15px;
+
+    @include bp-desktop() {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      padding: 15px 15px 15px 60px;
+
+      &:before {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 50vw;
+        left: 50%;
+        top: 0;
+        background: $color-brand;
+      }
+    }
   }
 
   &__logo-con {
     text-align: center;
     margin: 0;
+
+    @include bp-desktop() {
+      flex: 0 0 270px;
+    }
   }
 
   &__logo-link {
@@ -22,6 +44,10 @@
     width: 50px;
     display: inline-block;
     vertical-align: middle;
+
+    @include bp-tablet() {
+      width: 60px;
+    }
   }
 
   &__logo-text {
@@ -32,6 +58,11 @@
     line-height: .875;
     margin: .1em 0 0 5px;
     font-weight: 400;
+
+    @include bp-tablet() {
+      width: 200px;
+      font-size: pxToRem(33);
+    }
   }
 
   &__nav-toggle {
@@ -43,7 +74,11 @@
     height: 50px;
     width: 50px;
     z-index: 9;
-    border: none;
+    border: 2px solid #fff;
+
+    @include bp-desktop() {
+      display: none;
+    }
   }
 
   &__toggle-bar {
@@ -93,6 +128,18 @@
 
     transition: opacity .25s ease, visibility .25s ease, transform .25s ease;
 
+    @include bp-desktop() {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+      transform: none;
+      margin: -15px 0;
+      transition: none;
+      background: transparent;
+      width: auto;
+    }
+
     &.is-open {
       transform: none;
       opacity: 1;
@@ -108,11 +155,26 @@
     flex-direction: column;
     height: 100%;
     justify-content: center;
+
+    @include bp-desktop() {
+      flex-direction: row;
+    }
   }
 
   &__menu-item {
-    flex: 0 0 60px;
-    margin: 0 0 5px;
+    margin: 0;
+
+    @include bp-desktop() {
+      flex: 0 1 auto;
+      margin: 0;
+      position: relative;
+
+      &:hover {
+        .page-header__sub-menu {
+          display: block;
+        }
+      }
+    }
   }
 
   &__menu-link {
@@ -120,10 +182,109 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     color: #fff;
     text-decoration: none;
     background: $color-brand;
     font-size: pxToRem(24);
+    margin: 0 0 5px;
+    padding: 15px;
+
+    &--last {
+      color: $color-tertiary;
+    }
+
+    &:hover {
+      color: $color-tertiary;
+      cursor: pointer;
+    }
+
+    @include bp-desktop() {
+      position: relative;
+      font-size: pxToRem(18);
+      padding: 0 15px;
+      margin: 0;
+      height: 100%;
+      background: transparent;
+    }
   }
+
+  &__sub-menu {
+    padding: 0;
+    margin: 0 0 15px;
+    list-style: none;
+    font-size: pxToRem(20);
+
+    @include bp-desktop() {
+      display: none;
+      position: absolute;
+      left: -15px;
+      top: 100%;
+      width: 182px;
+      background: $color-brand;
+    }
+  }
+
+  &__sub-item {
+
+    @include bp-desktop() {
+      position: relative;
+
+      &:hover {
+        >.page-header__sub-link {
+          background: $color-brand-dark;
+        }
+
+        .page-header__sub-menu-two {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__sub-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    background: $color-brand-dark;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0 0 5px;
+
+    &:hover {
+      color: $color-tertiary;
+      cursor: pointer;
+    }
+
+    @include bp-desktop() {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background: $color-brand;
+      text-decoration: none;
+      font-size: pxToRem(18);
+      padding: 20px 30px;
+      margin: 0;
+    }
+  }
+
+  &__sub-menu-two {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: pxToRem(16);
+
+    @include bp-desktop() {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 182px;
+      background: $color-brand-dark;
+    }
+  }
+
 }

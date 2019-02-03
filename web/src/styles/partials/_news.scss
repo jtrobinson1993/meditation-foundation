@@ -76,6 +76,10 @@
       line-height: 1.1;
       margin: 0 0 .5em;
       color: #000;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
 
     &-content {
@@ -133,6 +137,10 @@
     margin: 0;
     color: #000;
     flex: 1 1 auto;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   &__item-actions {

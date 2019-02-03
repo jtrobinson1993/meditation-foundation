@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: $font-base;
   font-size: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
 // Base Styles
 
 h1, h2, h3 {
-  font-family: "Shrikhand", cursive, sans-serif;
+  font-family: $font-headings;
   line-height: 1;
 }
 

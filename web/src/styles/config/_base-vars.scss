@@ -8,6 +8,7 @@ $color-white: #fff;
 $color-grey: #AFAFAF;
 
 $color-brand: #960048;
+$color-brand-dark: #82003E;
 $color-secondary:#FAEDDE;
 $color-tertiary: #F5A800;
 
@@ -16,6 +17,10 @@ $color-light-blue: #7A97D4;
 
 // Layout
 $constraint-width: #{1170px + 120px}; // 1170 page width + desktop horizontal padding
+
+//Fonts
+$font-base: "Roboto", Arial, sans-serif;
+$font-headings: "Shrikhand", cursive;
 
 // Icons
 

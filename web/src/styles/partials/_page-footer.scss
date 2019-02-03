@@ -3,6 +3,10 @@
 .page-footer {
   background: #000;
 
+  &__constraint {
+    text-align: center;
+  }
+
   &__logo-con {
     text-align: center;
     margin: 0;
@@ -19,16 +23,24 @@
     width: 50px;
     display: inline-block;
     vertical-align: middle;
+    @include bp-tablet() {
+      width: 60px;
+    }
   }
 
   &__logo-text {
     display: inline-block;
     font-size: 1.675rem;
+    font-family: $font-headings;
     vertical-align: middle;
     width: 175px;
     line-height: .875;
     margin: .1em 0 0 5px;
     font-weight: 400;
+    @include bp-tablet() {
+      width: 200px;
+      font-size: pxToRem(33);
+    }
   }
 
   &__info {
@@ -46,8 +58,10 @@
 
   &__info-item {
     margin: 30px 0;
+    text-align: left;
     @include bp-tablet() {
-      margin: 30px;
+      margin: 30px 45px;
+      text-align: center;
     }
   }
 
@@ -67,6 +81,14 @@
   &__menu-link {
     text-decoration: none;
     color: $color-tertiary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    font-size: pxToRem(16);
+    color: #fff;
   }
 
 }
