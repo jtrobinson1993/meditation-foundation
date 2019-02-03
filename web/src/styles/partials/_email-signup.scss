@@ -74,6 +74,14 @@
       font-size: pxToRem(26);
       color: #fff;
     }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        color: $color-tertiary;
+      }
+    }
   }
 
   &__facebook {

@@ -8,6 +8,11 @@
 
   &__content {
     text-align: left;
+
+    @include bp-desktop() {
+      display: flex;
+      align-items: flex-start;
+    }
   }
 
   &__first {
@@ -15,11 +20,21 @@
     background: $color-tertiary;
     padding: 20px 15px;
 
+    @include bp-desktop() {
+      flex: 0 0 390px;
+      margin-right: 30px;
+      padding: 30px;
+    }
+
     &-actions {
       flex: 0 0 50px;
       text-align: center;
       margin-right: 15px;
       color: #fff;
+
+      @include bp-desktop() {
+        margin-right: 30px;
+      }
     }
 
     &-month {
@@ -27,6 +42,7 @@
       font-size: pxToRem(12);
       display: block;
       line-height: 1;
+
       @include bp-tablet() {
         font-size: pxToRem(14);
       }
@@ -36,7 +52,7 @@
       font-size: pxToRem(24);
       font-family: "Shrikhand";
       line-height: 1;
-      
+
       @include bp-tablet() {
         font-size: pxToRem(24);
       }
@@ -51,10 +67,22 @@
         margin: 15px 0 0;
       }
 
+      @include bp-desktop() {
+        margin: 20px 0 0;
+      }
+
       &:before {
         font-family: $font-family-icons;
         font-size: pxToRem(18);
         color: #fff;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &:before {
+          color: #000;
+        }
       }
     }
 
@@ -76,13 +104,19 @@
       line-height: 1.1;
       margin: 0 0 .5em;
       color: #000;
+      font-size: pxToRem(26);
+
       &:hover {
         text-decoration: underline;
         cursor: pointer;
       }
+
+      @include bp-desktop() {
+        font-size: pxToRem(33);
+      }
     }
 
-    &-content {
+    &-description {
       font-size: pxToRem(16);
       line-height: 1.4;
       margin: 0;
@@ -91,6 +125,12 @@
       @include bp-tablet() {
         font-size: pxToRem(18);
       }
+    }
+  }
+
+  &__listing {
+    @include bp-desktop() {
+      flex: 1 1 auto;
     }
   }
 
@@ -137,9 +177,16 @@
     margin: 0;
     color: #000;
     flex: 1 1 auto;
+    font-size: pxToRem(26);
+
     &:hover {
+      // simulate link styles, non-functional
       text-decoration: underline;
       cursor: pointer;
+    }
+
+    @include bp-desktop() {
+      font-size: pxToRem(33);
     }
   }
 
@@ -164,6 +211,14 @@
       font-family: $font-family-icons;
       font-size: pxToRem(18);
       color: #000;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        color: $color-tertiary;
+      }
     }
   }
 

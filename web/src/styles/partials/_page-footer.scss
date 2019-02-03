@@ -87,8 +87,12 @@
   }
 
   &__copyright {
+    display: inline-block;
     font-size: pxToRem(16);
     color: #fff;
+    @include bp-desktop() {
+      margin: 30px 0 0;
+    }
   }
 
 }
