@@ -25,6 +25,7 @@
     line-height: 1;
     color: $color-grey-dark;
     padding: 15px 30px;
+    -webkit-appearance: none;
 
     @include bp-tablet() {
       font-size: pxToRem(20);

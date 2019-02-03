@@ -25,6 +25,7 @@
     padding: 15px 20px;
     transition: border .25s ease;
     color: $color-grey-dark;
+    -webkit-appearance: none;
 
     &:focus {
       outline: 0;
