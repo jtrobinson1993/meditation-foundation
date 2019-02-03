@@ -1,6 +1,8 @@
 @import "../config/_base-import.scss";
 
 .latest-news {
+  background: url('../assets/brand-bg.jpg') no-repeat center;
+  background-size: cover;
 
   &__constraint {
     text-align: center;
