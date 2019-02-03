@@ -145,6 +145,13 @@
     align-items: center;
     padding: 30px 0;
     border-bottom: 1px solid rgba(#000, .4);
+
+    &--first {
+
+      @include bp-desktop() {
+        border-top: 1px solid rgba(#000, .4);
+      }
+    }
   }
 
   &__item-date {
